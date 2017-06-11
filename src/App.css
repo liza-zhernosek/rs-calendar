@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: gray;
+}
+
+body {
+  background: #f5f2f2;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(212, 204, 204, 0.87);
+  box-sizing: border-box;
+  position: relative;
+  margin-left: -1px;
+  margin-top: -1px;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.details-container-hidden {
+  display: none;
+}
+
+.details-container {
+  position: relative;
+  margin-left: 20px;
+  min-width: 450px;
+}
+
+.details-container .deadline-event {
+  color: red;
+}
+
+.details-container h1 {
+  position: absolute;
+  top: -36px;
+}
+
+.cells-container,
+.calendar-header {
+  display: flex;
+  width: 700px;
+  flex-wrap: wrap;
+}
+
+.calendar-header {
+  margin-top: -10px;
+}
+
+.calendar-header .cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: rgba(210, 93, 93, 0.9);
+  margin: 0;
+  cursor: default;
+  font-size: 16px;
+}
+
+.margin-100 {
+  margin-left: 98px;
+}
+
+.margin-200 {
+  margin-left: 197px;
+}
+
+.margin-300 {
+  margin-left: 296px;
+}
+
+.margin-400 {
+  margin-left: 395px;
+}
+
+.margin-500 {
+  margin-left: 494px;
+}
+
+.margin-600 {
+  margin-left: 593px;
+}
+
+.calendar-container,
+.avatars-container {
+  display: flex;
+}
+
+.calendar-container {
+  align-items: flex-start;
+  padding-left: 50px;
+  margin-right: 20px;
+}
+
+.avatars-container {
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.avatars-container div,
+.avatars-container img {
+  width: 100px;
+}
+
+.active {
+  border: 3px solid rgba(214, 111, 111, 0.56);
+  border-radius: 7px;
+  padding: 2px;
+}
+
+.deadline,
+.deadline-event {
+  color: rgba(210, 93, 93, 0.9);
+}
+
+.current-month,
+.switch-menu,
+.navigation {
+  display: inline-block;
+}
+
+header {
+  width: 700px;
+  margin-left: 45px;
+  margin-top: 10px;
+}
+
+.switch-menu,
+.navigation {
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+.navigation {
+  float: right;
+  margin-right: 33px;
+}
+
+.btn {
+  height: 25px;
+  margin-top: 6px;
+  background: none;
+  border: 1px solid rgba(212, 204, 204, 0.87);
+  border-radius: 5px;
+  outline: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.navigation .btn {
+  margin-right: 5px;
+}
+
+.time-lines-container {
+  width: 700px;
+  position: relative;
+}
+
+.time-line {
+  height: 25px;
+  border-bottom: 1px solid rgba(212, 204, 204, 0.87);
+  line-height: 35px;
+  margin-left: -30px;
+  box-sizing: border-box;
+}
+
+.time-event {
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.time-event-deadline {
+  color: rgba(210, 93, 93, 0.9);
+}
+
+.details-content {
+  margin-top: 10px;
+}
+
+.details-content h2 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.details-content h6 {
+  margin-bottom: 10px;
+}
+
+.details-content p {
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.resources-item {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-device-width: 750px) {
+  .calendar-container {
+    flex-direction: column;
+  }
+
+  .details-container {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+}
